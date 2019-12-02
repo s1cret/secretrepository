@@ -11,7 +11,7 @@ body{
     flex-grow: 1;
 }
 div{
-    border:2px red solid;
+   border:2px red solid;
     padding: 5px;
 }
 body, html{
@@ -52,15 +52,139 @@ body, html{
 .conteiner{
     display: flex;
     flex-grow: 1;
+    height: 100vh;
 }
 .block{
     border:1px #ccc solid;
 }
 .box{
     text-align: center;
-    
-}   
+}
+.box-head{
+    text-align: left;
+    background-color: rgb(37, 70, 80);
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+}
+.bd-collaut{
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+}
+.bd-callout-danger {
+    border-left-color: #d9534f;
+}  
+.scroll{
+    height: 100%;
+    overflow-y: scroll;
+}
 
-.item1 {background-color: #675BA7; height: 150px;}
+.item1 {background-color: #675BA7; flex-shrink: 0; height: 100px;}
 .item2 {background-color: #28a745!important; }
 .item3 {background-color: #ffc107!important; }
+
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #545b62;
+    border-color: #4e555b;
+}
+.btn-secondary.focus, .btn-secondary:focus {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+    box-shadow: 0 0 0 0.2rem rgba(130,138,145,.5);
+}
+.btn-secondary.focus, .btn-secondary:focus {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+    box-shadow: 0 0 0 0.2rem rgba(130,138,145,.5);
+}
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+/* Dropdown Button */
+.dropdown-toggle {
+    background-color: rgb(37, 70, 80);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  /* Dropdown button on hover & focus */
+  .dropdown-toggle:hover, .dropdown-toggle:focus {
+    background-color: rgb(37, 70, 80);
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown.show .dropdown-menu{
+      display: block;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-menu a:hover {background-color: #ddd}
+  

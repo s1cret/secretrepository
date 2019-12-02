@@ -11,12 +11,36 @@
         <div class="conteiner flex-row">
             <div class="block flex-column col-1">
                 <div class="box item1">
+                    <div class="dropdown col-1 flex-column">
+                        <button class="btn btn-secondary dropdown-toggle"
+                         type="button" id="dropdownMenuButton">Рабочий стол аналитика</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">День 1</a>
+                            <a class="dropdown-item" href="#">День 2</a>
+                            <a class="dropdown-item" href="#">День 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown col-1 flex-column">
+                        <button class="btn btn-secondary dropdown-toggle"
+                         type="button" id="dropdownMenuButton1">Эта неделя</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">13</a>
+                                <a class="dropdown-item" href="#">14</a>
+                                <a class="dropdown-item" href="#">15</a>
+                            </div>
+                        </div>
                     <span>1</span>
                 </div>
                 <div class="box item2 flex-grow">
+                    <div class="box-head">
+                        <h6>Информационные объекты</h6>
+                    </div>
                     <span>2</span>
                 </div>
                 <div class="box item3 flex-grow">
+                    <div class="box-head">
+                        <h6>События по типу угроз</h6>
+                    </div>
                     <span>3</span>
                 </div>
             </div>
@@ -26,24 +50,42 @@
                 </div>
                 <div class="flex-row flex-grow align-items-stretch">
                     <div class="box item2 col">
+                        <div class="box-head">
+                            <h6>Группы на особом контроле</h6>
+                        </div>
                         <span>5</span>
                     </div>
                     <div class="box item2 col">
+                        <div class="box-head">
+                            <h6>Аномальное поведние</h6>
+                        </div>
                         <span>6</span>
                     </div>
                 </div>
                 <div class="box item3 flex-grow">
-                        <span>7</span>
+                    <div class="box-head">
+                        <h6>Все события по каналам комуникаций</h6>
                     </div>
+                    <span>7</span>
+                </div>
             </div>
             <div class="block flex-column col-1">
                 <div class="box item1">
                     <span>7</span>
                 </div>
-                <div class="box item2 flex-column flex-grow">
-                    <span>8</span>
+                <div class="box item2 flex-column flex-grow" style="height: 100%">
+                    <div class="box-head">
+                        <h6>События</h6>
+                    </div>
+                    <div class="scroll">
+                        <div style="height: 200vh;"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </body>
 </html>
+
+
+
+<script src="/js/script.js"></script>
