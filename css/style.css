@@ -11,7 +11,7 @@ body{
     flex-grow: 1;
 }
 div{
-   border:2px red solid;
+   border:2px rgb(73, 116, 117) solid;
     padding: 5px;
 }
 body, html{
@@ -84,16 +84,15 @@ body, html{
     overflow-y: scroll;
 }
 
-.item1 {background-color: #675BA7; flex-shrink: 0; height: 100px;}
-.item2 {background-color: #28a745!important; }
-.item3 {background-color: #ffc107!important; }
+.item1 {background-color: rgb(73, 116, 117); flex-shrink: 0; height: 100px;}
+.item2 {background-color: rgb(73, 116, 117) !important; }
+.item3 {background-color: rgb(73, 116, 117) !important; }
 
 .btn{
     display: inline-block;
     font-weight: 400;
     color: #212529;
     text-align: center;
-    vertical-align: middle;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -103,7 +102,6 @@ body, html{
     border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1rem;
-    line-height: 1.5;
     border-radius: .25rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -113,9 +111,9 @@ body, html{
     border-color: #6c757d;
 }
 .dropdown-toggle::after {
-    display: inline-block;
+    /*display: inline-block;*/
     margin-left: .255em;
-    vertical-align: .255em;
+    /*vertical-align: .255em;*/
     content: "";
     border-top: .3em solid;
     border-right: .3em solid transparent;
@@ -148,7 +146,6 @@ body, html{
 .dropdown-toggle {
     background-color: rgb(37, 70, 80);
     color: white;
-    padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
