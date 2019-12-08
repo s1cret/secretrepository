@@ -5,7 +5,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.15;
-    background-color: rgb(73, 116, 117);
+    background-color: rgb(27, 77, 97);
     color: rgb(255, 255, 255);
     display: flex;
     flex-grow: 1;
@@ -60,9 +60,9 @@ body, html{
     flex-grow: 1;
     height: 100vh;
 }
-.block{
+/*.block{
     border:1px #ccc solid;
-}
+}*/
 .box{
     text-align: center;
 }
@@ -73,6 +73,7 @@ body, html{
     border-radius: 10px;
     width: 100%;
     height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.267);
 }
 .bd-collaut{
     padding: 1.25rem;
@@ -99,6 +100,7 @@ input{
     border: none;
     text-align: center;
     color: rgb(245, 245, 245);
+    
 }
 table{
     font-size: 12px;
@@ -112,10 +114,34 @@ table{
     color: rgb(155, 155, 155);
     
 }
-
-.item1 {background-color: rgb(73, 116, 117); flex-shrink: 0; height: 100px;}
-.item2 {background-color: rgb(73, 116, 117) !important; }
-.item3 {background-color: rgb(73, 116, 117) !important; }
+.text-head{
+    font-size: 12px;
+    text-align: left;
+}
+.text-item-g td:last-child{
+    color:rgb(153, 153, 153);
+}
+.fon-seren{
+    background-image:url(/img/seren.png);
+    background-size: 40px;
+}
+.fon-message{
+    background-image:url(/img/message.png);
+    background-size: 35px;
+}
+.fon-seren, .fon-message{
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.counter{
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+.item1 {background-color: rgb(27, 77, 97); flex-shrink: 0; height: 100px;}
+.item2 {background-color: rgb(27, 77, 97) !important; }
+.item3 {background-color: rgb(27, 77, 97) !important; }
 
 .btn{
     display: inline-block;
@@ -182,6 +208,7 @@ table{
     font-size: 16px;
     border: none;
     cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.336);
   }
   /* Dropdown button on hover & focus */
   .dropdown-toggle:hover, .dropdown-toggle:focus {
@@ -228,12 +255,13 @@ table{
     height: 70px;
     border-radius: 50%;
     background: rgb(120, 246, 248);
+    margin: 15px;
   }
   .graph-mask {
     position: absolute;
     width: 65px;
     height: 65px;
-    background: rgb(73, 116, 117) center center no-repeat;
+    background: rgb(27, 77, 97) center center no-repeat;
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -279,4 +307,49 @@ table{
     clip: rect(25px, 35px, 35px, 0px);
     background: rgb(250, 117, 250);
     transform: rotate(100deg);
+}
+.slice-block{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.graph-big .slice-big-1 {
+    clip: rect(0px, 35px, 70px, 0px);
+    background: rgb(105, 212, 231);
+}
+.graph-big .slice-big-2 {
+    clip: rect(0px, 35px, 70px, 0px);
+    background: rgb(250, 117, 250);
+}
+.graph-big .slice-big-3 {
+    clip: rect(0px, 35px, 70px, 0px);
+    background: rgb(199, 50, 50);
+}
+.graph-big {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgb(120, 246, 248);
+    margin: 15px;
+}
+.graph-mask-big{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: rgb(27, 77, 97) center center no-repeat;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    transform: translate3d(-50%, -50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.graph-big .slice-big{
+    clip: rect(25px, 35px, 35px, 0px);
+    background: rgb(223, 231, 104);
+    transform: rotate(50deg);
 }
