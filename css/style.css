@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.15;
     background-color: rgb(73, 116, 117);
     color: rgb(255, 255, 255);
@@ -11,8 +11,11 @@ body{
     flex-grow: 1;
 }
 div{
-   border:2px rgb(73, 116, 117) solid;
+    /*border:2px rgb(73, 116, 117) solid;*/
     padding: 5px;
+}
+.head-div div{
+    padding: 0;
 }
 body, html{
     height: 100%;
@@ -45,6 +48,9 @@ body, html{
 }
 .flex-grow{
     flex-grow: 1;
+}
+.flex-fill{
+    flex: 1 1 auto;
 }
 .align-items-stretch{
     align-items: stretch;
@@ -83,6 +89,29 @@ body, html{
     height: 100%;
     overflow-y: scroll;
 }
+.img-circle{
+    border-radius: 50%;
+    max-height: 100%;
+    width: auto;
+}
+input{
+    background: rgb(30, 47, 48);
+    border: none;
+    text-align: center;
+    color: rgb(245, 245, 245);
+}
+table{
+    font-size: 12px;
+}
+.search-comm{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(102, 102, 102) ;
+}
+::placeholder{
+    color: rgb(155, 155, 155);
+    
+}
 
 .item1 {background-color: rgb(73, 116, 117); flex-shrink: 0; height: 100px;}
 .item2 {background-color: rgb(73, 116, 117) !important; }
@@ -105,15 +134,19 @@ body, html{
     border-radius: .25rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+.btn-block{
+    display: block;
+    width: 100%;
+}
 .btn-secondary {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d;
 }
 .dropdown-toggle::after {
-    /*display: inline-block;*/
+    display: inline-block;
     margin-left: .255em;
-    /*vertical-align: .255em;*/
+    vertical-align: .255em;
     content: "";
     border-top: .3em solid;
     border-right: .3em solid transparent;
@@ -185,3 +218,65 @@ body, html{
   /* Change color of dropdown links on hover */
   .dropdown-menu a:hover {background-color: #ddd}
   
+.graph, .graph div{
+    padding: 0;
+}
+  /**/
+  .graph {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgb(120, 246, 248);
+  }
+  .graph-mask {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background: rgb(73, 116, 117) center center no-repeat;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    transform: translate3d(-50%, -50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slice {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    clip: rect(0px, 35px, 70px, 0px);
+    background: rgb(250, 117, 250);
+  }
+  .slice-mask {
+    transform: rotate(0deg);
+  }
+  .slice-mask {
+    background: rgb(250, 117, 250);
+    transform: rotate(150deg);
+  }
+.graph-1 .slice-mask{
+    transform: rotate(60deg);
+}
+.graph-2 .slice-mask{
+    clip: rect(35px, 35px, 70px, 0px);
+    transform: rotate(160deg);
+}
+.graph-3 .slice-mask{
+    clip: rect(0px, 35px, 70px, 0px);
+    background: rgb(243, 45, 45);
+    transform: rotate(0deg);
+}
+.graph-4 .slice-mask{
+    clip: rect(35px, 35px, 70px, 0px);
+    background: rgb(243, 45, 45);
+    transform: rotate(100deg);
+}
+.graph-5 .slice-mask{
+    clip: rect(25px, 35px, 35px, 0px);
+    background: rgb(250, 117, 250);
+    transform: rotate(100deg);
+}
