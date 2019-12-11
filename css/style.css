@@ -14,6 +14,12 @@ div{
     /*border:2px rgb(73, 116, 117) solid;*/
     padding: 5px;
 }
+p{
+    vertical-align: text-bottom;
+}
+.p-pod{
+color: rgb(129, 129, 129);
+}
 .head-div div{
     padding: 0;
 }
@@ -142,6 +148,13 @@ table{
 .item1 {background-color: rgb(27, 77, 97); flex-shrink: 0; height: 100px;}
 .item2 {background-color: rgb(27, 77, 97) !important; }
 .item3 {background-color: rgb(27, 77, 97) !important; }
+
+.event{
+    border: 1px rgb(70, 63, 63) solid;
+    height: 120px;
+    text-align: left;
+}
+
 
 .btn{
     display: inline-block;
